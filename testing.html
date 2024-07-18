@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        .header-logo {
+            width: 100px;
+        }
+        .header-links {
+            display: flex;
+            gap: 20px;
+        }
+        .image-container {
+            width: 100%;
+            height: 30vh;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin-top: -10px; 
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 0 10px 10px 10px; 
+            text-align: center;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="header-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoQPrJvAncDxIlbv-IXDjOL9EEgkUU8qfVw&s" alt="Full Width Image">
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoQPrJvAncDxIlbv-IXDjOL9EEgkUU8qfVw&s" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>$19.99</p>
+            <p>Description of Product 1</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoQPrJvAncDxIlbv-IXDjOL9EEgkUU8qfVw&s" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>$29.99</p>
+            <p>Description of Product 2</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoQPrJvAncDxIlbv-IXDjOL9EEgkUU8qfVw&s" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>$39.99</p>
+            <p>Description of Product 3</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoQPrJvAncDxIlbv-IXDjOL9EEgkUU8qfVw&s" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>$49.99</p>
+            <p>Description of Product 4</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoQPrJvAncDxIlbv-IXDjOL9EEgkUU8qfVw&s" alt="Product 5">
+            <h3>Product 5</h3>
+            <p>$59.99</p>
+            <p>Description of Product 5</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoQPrJvAncDxIlbv-IXDjOL9EEgkUU8qfVw&s" alt="Product 6">
+            <h3>Product 6</h3>
+            <p>$69.99</p>
+            <p>Description of Product 6</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Footer text
+    </div>
+</body>
+</html>

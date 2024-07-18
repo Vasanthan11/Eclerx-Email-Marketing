@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .main-container {
+      width: 600px;
+      margin: 0 auto;
+    }
+    .main-table {
+      width: 100%;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .header {
+      background-color: #0073e6;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .header img {
+      margin-right: 20px;
+      max-width: 50px;
+    }
+    .content {
+      padding: 20px;
+      color: #333;
+    }
+    .content h2 {
+      font-size: 20px;
+      color: #0073e6;
+      margin-top: 20px; 
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .content ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    .content ul li {
+      background: #eef;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .button-container {
+      text-align: center;
+      margin: 30px 0; 
+    }
+    .button {
+      background-color: #0073e6;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-block;
+    }
+    .footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+      .main-container {
+        width: 100%;
+      }
+      .main-table {
+        border-radius: 0; 
+      }
+      .header h1 {
+        font-size: 20px;
+      }
+      .content h2 {
+        font-size: 18px;
+      }
+      .content p,
+      .content ul li {
+        font-size: 14px;
+      }
+      .button {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+      .button-container {
+        margin: 20px 0; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <table class="main-table" role="presentation" aria-hidden="true">
+      <tr>
+        <td>
+
+          <table width="100%" role="banner">
+            <tr>
+              <td class="header">
+                <img src="https://picsum.photos/50" alt="TechSavvy Logo" />
+                <h1>TechCon 2024</h1>
+              </td>
+            </tr>
+          </table>
+
+          <table width="100%" role="main">
+            <tr>
+              <td class="content">
+                <h2>Join Us for TechCon 2024!</h2>
+                <p>We are excited to invite you to TechCon 2024, the premier technology conference organized annually by TechSavvy Inc. This year’s event promises to be our best yet, with an incredible lineup of speakers, interactive workshops, and networking opportunities.</p>
+                
+                <h2>Event Details</h2>
+                <p><strong>Date:</strong> September 20-22, 2024</p>
+                <p><strong>Location:</strong> Silicon Valley Conference Center, California</p>
+                
+                <h2>Keynote Speakers</h2>
+                <ul>
+                  <li>Jane Doe - CEO of Innovative Tech</li>
+                  <li>John Smith - Lead Developer at OpenAI</li>
+                  <li>Emma Brown - Head of AI Research at TechSavvy Inc.</li>
+                </ul>
+                
+                <h2>Event Schedule</h2>
+                <ul>
+                  <li><strong>Day 1:</strong> Keynote sessions, Panel discussions, Networking</li>
+                  <li><strong>Day 2:</strong> Workshops, Product Demos, Startup Pitches</li>
+                  <li><strong>Day 3:</strong> Hackathon, Closing Remarks, Award Ceremony</li>
+                </ul>
+                
+                <div class="button-container">
+                  <a href="https://techcon2024.com/register" class="button">Register Now</a>
+                </div>
+                
+                <p>Don't miss out on this incredible opportunity to learn, network, and innovate. We look forward to seeing you at TechCon 2024!</p>
+              </td>
+            </tr>
+          </table>
+
+          <table width="100%" role="contentinfo">
+            <tr>
+              <td class="footer">
+                &copy; 2024 TechSavvy Inc. All rights reserved.<br>
+                1234 Tech Lane, Silicon Valley, CA 94043<br>
+                <a href="https://techsavvyinc.com/unsubscribe">Unsubscribe</a> | <a href="https://techsavvyinc.com">Visit our website</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

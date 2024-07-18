@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        font-family: Arial, sans-serif;
+      }
+      .main-table {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f9f9f9;
+        border: 1px solid #dddddd;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .header {
+        background-color: #0073e6;
+        padding: 20px;
+        text-align: left;
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+      .header img {
+        max-width: 70px;
+        margin-right: 20px;
+        border-radius: 50%;
+        object-fit: contain;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .content {
+        padding: 20px;
+      }
+      .content h2 {
+        font-size: 22px;
+        color: #333;
+      }
+      .content p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #0073e6;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .cta-button:hover {
+        background-color: #005bb5;
+        transform: scale(1.05);
+      }
+      .banner-image {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .feature-item {
+        flex: 1 1 calc(50% - 10px);
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .subscription-form {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+      }
+      .subscription-form input[type="email"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      .subscription-form input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .social-links {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .social-links a {
+        margin: 0 10px;
+        display: inline-block;
+        color: #0073e6;
+        text-decoration: none;
+      }
+      .social-links img {
+        max-width: 30px;
+      }
+      .footer {
+        padding: 20px;
+        background-color: #f1f1f1;
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+      }
+      .footer p {
+        margin: 0;
+        padding: 5px 0;
+      }
+
+      @media (max-width: 600px) {
+        .header img {
+          margin: 10px;
+        }
+        .header h1 {
+          font-size: 20px;
+        }
+        .content h2 {
+          font-size: 20px;
+        }
+        .content p {
+          font-size: 14px;
+        }
+        .cta-button {
+          font-size: 14px;
+          padding: 8px 16px;
+        }
+        .features {
+          flex-direction: column;
+        }
+        .feature-item {
+          flex: 1 1 100%;
+        }
+        .subscription-form {
+          padding: 15px;
+        }
+        .subscription-form input[type="email"] {
+          width: calc(100% - 20px);
+        }
+        .subscription-form input[type="submit"] {
+          font-size: 14px;
+          padding: 8px 16px;
+        }
+        .footer {
+          padding: 15px;
+          font-size: 12px;
+        }
+        .social-links a {
+          margin: 0 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="main-table">
+      <tr>
+        <td>
+          <table width="100%" class="header">
+            <tr>
+              <td style="display: flex; align-items: center;">
+                <img
+                  src="https://picsum.photos/70"
+                  alt="TechInnovate logo"
+                  aria-label="TechInnovate logo"
+                />
+                <h1>TechInnovate</h1>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td class="content">
+          <h2>Introducing the SmartWatch Pro</h2>
+          <p>
+            The SmartWatch Pro is the ultimate companion for your active lifestyle.
+            With its sleek design, advanced health tracking features, and long-lasting
+            battery, the SmartWatch Pro keeps you connected and informed wherever you go.
+          </p>
+          <img
+            src="https://picsum.photos/600/300"
+            alt="SmartWatch Pro Banner"
+            aria-label="SmartWatch Pro Banner"
+            class="banner-image"
+          />
+          <p>
+            <strong>Features:</strong>
+          </p>
+          <div class="features">
+            <div class="feature-item">High-resolution touch display</div>
+            <div class="feature-item">Heart rate and sleep monitoring</div>
+            <div class="feature-item">GPS and activity tracking</div>
+            <div class="feature-item">Water-resistant up to 50 meters</div>
+            <div class="feature-item">Customizable watch faces and bands</div>
+            <div class="feature-item">Compatible with iOS and Android</div>
+          </div>
+          <p>
+            Don't miss out on the chance to elevate your daily routine.
+            Visit our website to learn more and be one of the first to experience the SmartWatch Pro.
+          </p>
+          <a href="https://techinnovate.com/smartwatchpro" class="cta-button">Shop Now</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="content">
+          <h2>Stay Updated</h2>
+          <p>
+            Sign up for our newsletter to receive the latest updates on the SmartWatch Pro
+            and other exciting TechInnovate products. By subscribing, you'll get exclusive
+            insights, early access to new features, and special offers directly in your inbox.
+          </p>
+          <form class="subscription-form" action="https://techinnovate.com/subscribe" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <input type="submit" value="Subscribe" />
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td class="footer">
+          <p>© 2024 TechInnovate. All rights reserved.</p>
+          <p>1234 Innovation Drive, Tech City, TC 56789</p>
+          <p>
+            <a href="https://techinnovate.com/privacy" target="_blank">Privacy Policy</a> |
+            <a href="https://techinnovate.com/terms" target="_blank">Terms of Service</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="content">
+          <div class="social-links">
+            <a href="https://facebook.com/TechInnovate" target="_blank">
+              <img src="https://example.com/facebook-icon.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com/TechInnovate" target="_blank">
+              <img src="https://example.com/twitter-icon.png" alt="Twitter" />
+            </a>
+            <a href="https://instagram.com/TechInnovate" target="_blank">
+              <img src="https://example.com/instagram-icon.png" alt="Instagram" />
+            </a>
+            <a href="https://linkedin.com/company/TechInnovate" target="_blank">
+             

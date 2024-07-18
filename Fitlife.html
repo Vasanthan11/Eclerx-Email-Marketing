@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife New Fitness Equipment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .center-heading {
+            background-color: green;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .left-align {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .form-container {
+            flex: 1;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: left;
+        }
+        .buttons button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: underline;
+            margin: 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        button[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: inline-block;
+            width: 100px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert("Form is submitted");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-heading">FitLife New Fitness Equipment</h1>
+
+        <h2 class="left-align">Discover Our Latest Range</h2>
+        <p class="left-align">Upgrade your workout with our new fitness equipment designed to help you achieve your fitness goals.</p>
+
+        <div class="buttons left-align">
+            <button>Shop Equipment</button>
+            <button>Shop Accessories</button>
+        </div>
+
+        <h2 class="left-align">Subscribe to Our Newsletter</h2>
+       
+        <p class="left-align">Stay updated with the latest news and exclusive offers.</p>
+        <div class="form-container">
+            <form class="form" onsubmit="handleSubmit(event)">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                
+                <label for="fitness-goals">Fitness Goals</label>
+                <select id="fitness-goals" name="fitness-goals" required>
+                    <option value="">Select Your Fitness Goal</option>
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                    <option value="endurance">Endurance</option>
+                    <option value="flexibility">Flexibility</option>
+                </select>
+                
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <h2 class="left-align">Special Offer</h2>
+        <p class="left-align">Get 20% off on your first purchase!</p>
+
+        <!-- Placeholder for GIF -->
+        <img src="https://i.pinimg.com/originals/f7/7d/a9/f77da9406a3a76c70a1d3afab2bada0e.gif" alt="Special Offer GIF" style="display: block; margin: 20px auto;">
+
+        <div class="footer">
+            <p>You're receiving this email because you subscribed to FitLife updates.</p>
+            <p><a href="#">Unsubscribe</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>

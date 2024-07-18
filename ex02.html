@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+      }
+      .header {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+      }
+      .pricing {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px 0;
+      }
+      .pricing-plan {
+        background-color: #e4e4e4;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        flex: 1 1 calc(33.33% - 40px);
+        box-sizing: border-box;
+        max-width: calc(33.33% - 40px);
+      }
+      .pricing-plan h2 {
+        margin: 10px 0;
+      }
+      .pricing-plan ul {
+        list-style: none;
+        padding: 0;
+      }
+      .pricing-plan ul li {
+        margin: 10px 0;
+      }
+      .cta {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .cta button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      @media (max-width: 900px) {
+        .pricing-plan {
+          flex: 1 1 calc(50% - 40px);
+          max-width: calc(50% - 40px);
+        }
+      }
+      @media (max-width: 600px) {
+        .pricing-plan {
+          flex: 1 1 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Our Pricing Plans</div>
+      <div class="pricing">
+        <div class="pricing-plan">
+          <h2>Basic Plan</h2>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+          </ul>
+          <div class="cta"><button>Select Plan</button></div>
+        </div>
+        <div class="pricing-plan">
+          <h2>Standard Plan</h2>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+            <li>Feature 4</li>
+          </ul>
+          <div class="cta"><button>Select Plan</button></div>
+        </div>
+        <div class="pricing-plan">
+          <h2>Premium Plan</h2>
+          <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+            <li>Feature 4</li>
+            <li>Feature 5</li>
+          </ul>
+          <div class="cta"><button>Select Plan</button></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
